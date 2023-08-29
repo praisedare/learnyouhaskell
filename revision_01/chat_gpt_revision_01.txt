@@ -1,0 +1,36 @@
+I haven't practiced Haskell for a few days and instead of just re-reading the
+chapters I think I might not be very familiar with, I asked chat gpt to give me
+a quiz on them to test my active recall and serve as a revision.
+Here are the questions it gave me:
+
+    1. Write a Haskell function that calculates the factorial of a given positive
+       integer.
+
+    2. Correct the following code snippet to calculate the sum of all even numbers
+       from 1 to n:
+
+        ```haskell
+        sumEvenNumbers n = sum [x | x <- [1..n], even x]
+        ```
+
+    3 What is the purpose of the map function in Haskell? Provide an example of
+      using it.
+
+    4 Write a recursive Haskell function to find the nth Fibonacci number.
+
+    5. What is currying in Haskell, and why is it useful? Give an example.
+
+    6. Correct the syntax error in the following pattern matching code for
+       calculating the length of a list:
+
+       ```haskell
+       listLength [] = 0
+       listLength (x:xs) = 1 + listLength xs
+       ```
+
+    7. Explain the difference between a monad and a functor in Haskell, and give an
+       example of each.
+
+    8. Define a higher-order function in Haskell called applyTwice that takes a
+       function f and a value x, and returns the result of applying f to x twice.
+
