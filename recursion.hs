@@ -28,7 +28,14 @@ reverse' :: [a] -> [a]
 reverse' [] = []
 reverse' list = (last list) : reverse' (init list)
 
+zip' :: [a] -> [a] -> [(a, a)]
 zip' _ [] = []
 zip' [] _ = []
 zip' (a:as) (b:bs) = (a,b) : zip' as bs
+
+elem' :: (Eq a) => a -> [a] -> Bool
+elem' a [] = False
+elem' a (b:rest)
+    | a == b = True
+    | otherwise = elem' a rest
 
